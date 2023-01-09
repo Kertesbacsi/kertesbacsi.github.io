@@ -1,0 +1,346 @@
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin:0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	min-height: 100vh;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;							/*#b38b6d világos barna*/						/*#413839  sötét barna*/
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 20px 5%;
+	transition: 0.3s ease-in-out;
+
+}
+.logo{
+	display: flex;
+	padding-left: 25px;
+
+}
+.logo i{
+	color: #b38b6d;
+	font-size: 25px;
+	
+}
+.logo span{
+	color: white;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+}
+
+.navbar a {
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 5px 0;
+	margin: 0px 20px;
+	transition: all .50s ease;
+	text-decoration: none;
+	border-radius: 25px;
+	transition: 0.3s ease-in-out;
+}
+.navbar a:hover{
+	background-color:#b38b6d;
+	border-radius: 25px;
+	width: 10px;
+	height: 10px;
+	padding: 10px;
+	transition: 0.3s ease-in-out;
+	color: white ;
+}
+
+.navbar a.active{
+	font-weight: bold;
+	font-size: 23px;
+	background-color: #b38b6d;  /*#b38b6d barna*/    /*#54626F szürke*/   /*#413839 barnás feketés*/
+	border-radius: 25px;
+	width: 10px;
+	height: 10px;
+	padding: 10px;
+	color: white;
+}
+
+.navbar a.active:hover{
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.main{
+	display: flex;
+	align-items: center;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	transition: all .50s ease;
+}
+
+.main a{
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	margin-left: 10px;
+	color: white;
+	font-weight: 500;
+	font-size: 25px;
+	transition: all .50s ease;
+
+}
+
+#menu-icon{
+	font-size: 35px;
+	color: white;
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+}
+
+.inverted {
+    background-color: #413839;
+    box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+    color: blue; 
+  }
+
+.section1{
+	height: 1000px;
+	background-image: url("wall2.jpg");
+	background-repeat: no-repeat;
+
+	background-position: center;
+	display: inline-block;
+	width: 100%;
+}
+
+.section1 h1{
+	text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.section1 #szo{
+	text-decoration: none;
+	color: #b38b6d;
+	font-weight: bolder;	
+}
+
+
+.section2{
+	background-color: white;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	padding: 15px 15px 15px 15px;
+}
+
+
+
+.section2 .szo2{
+	color: #b38b6d;
+}
+
+
+.section2 .szöveg{
+	float: left;
+	padding: 50px;
+	font-size: 20px;
+}
+.section2 .kep{
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.section2 #nev{
+	display: block;
+	position: relative;
+	top: 20%;
+}
+
+.section2 .en{
+	position: relative;
+	top: 15%;
+	width: 45%;
+	border-radius: 50%;
+	box-shadow: 20px 30px 40px  grey;
+}
+
+
+.section3{
+	height: 700px;
+	background-color: #b38b6d;
+	display: inline-block;
+	width: 100%;
+}
+
+.section4{
+	height: 700px;
+	background-color: white;
+	display: inline-block;
+	width: 100%;
+}
+
+
+
+@media screen and (max-width: 1280px){
+	.section1 h1{
+		text-align: center;
+		transition: all 0.50s ease;
+	}
+	header{
+		padding: 14px 2%;
+		transition: .2s ease;
+	}
+	.navbar a{
+		padding: 5px 0;
+		margin: 0px 20px;
+	}
+		
+	.section2 .en{
+		position: relative;
+		top: 20%;
+		width: 65%;
+	}
+	
+	.section2 #nev{
+	display: block;
+	position: relative;
+	top: 25%;
+}
+}
+
+@media (max-width: 1090px){
+	p{
+		font-size: 18px;
+	}
+}
+
+@media(max-width:440px){
+	.section1 h1{
+		text-align: left;
+	}
+
+	/*.section2{
+		display: flex;
+		flex-direction: column;
+		padding-bottom:20px ;
+	}*/
+
+	.section2 .szöveg h1{
+		text-align: center;
+	}
+
+	.section2{
+		display: flex;
+		flex-direction: column-reverse;
+		padding-top:65px;
+	}
+
+		.section2 .szöveg h1{
+		opacity: 0;
+	}
+
+	.section2 .en{
+		box-shadow: 10px 5px 30px  grey;
+		width: 50%;
+		height: auto;
+	}
+
+	.section2 #nev{
+	display: block;
+	position: relative;
+	top: 40%;
+}
+
+}
+
+@media (max-width: 860px){
+	header{
+		background-color:#413839 ;
+	}
+	#menu-icon{
+		display: block;
+	}
+	.navbar{
+		position: absolute;
+		top:100%;
+		right: -100%;
+		width: 100%;
+		height: 265px;
+		background-color: #413839;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		transition: all .50s ease;
+		padding-top: 6px;
+	}
+
+	.navbar a{
+		display: block;
+		margin: 12px 0px;
+		padding: 0px 25px;
+		transition: all .50s ease;
+		text-decoration: none;
+	}
+	.navbar a:hover{
+		color: white;
+		background-color: #413839;
+		transform: translateY(5px);
+		width: 0%;
+		height: 0%;
+		padding: 0%;
+
+
+	}
+	.navbar a.active{
+		color: white;
+		font-weight: bold;
+		font-size: 22px;
+		background-color: #413839;
+		width: 0%;
+		height: 0%;
+		padding: 0%;
+	}
+
+	.navbar.open{
+		right: 0%;
+	}
+
+	.section1 h1{
+		text-align: center;
+		transition: all .50s ease;
+	}
+
+	.section2 .kep .en{
+		width: 70%;
+		height: auto;
+		top: 5%;
+	}
+	.section2 .kep #nev{
+		top: 10%;
+	}
+}
