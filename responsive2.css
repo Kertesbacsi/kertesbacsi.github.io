@@ -12,12 +12,12 @@ html{
 body{
 	min-height: 100vh;
 }
-
+/*szinek*/
 header{
 	position: fixed;
 	width: 100%;
-	top: 0;							/*#b38b6d világos barna*/						/*#413839  sötét barna*/
-	z-index: 1000;
+	top: 0;						/*#b38b6d világos barna*/	
+	z-index: 1000;				/*#413839  sötét barna*/
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -26,6 +26,12 @@ header{
 	transition: 0.3s ease-in-out;
 
 }
+
+.hatter{
+	background-color: white;
+	color:#413839 ;
+}
+
 .logo{
 	display: flex;
 	padding-left: 25px;
@@ -71,13 +77,16 @@ header{
 .navbar a.active{
 	font-weight: bold;
 	font-size: 23px;
-	background-color: #b38b6d;  /*#b38b6d barna*/    /*#54626F szürke*/   /*#413839 barnás feketés*/
-	border-radius: 25px;
-	width: 10px;
+	background-color: #b38b6d;  /*#b38b6d barna*/       
+	border-radius: 25px;		/*#54626F szürke*/
+	width: 10px;				/*#413839 barnás feketés*/
 	height: 10px;
 	padding: 10px;
 	color: white;
 }
+
+
+
 
 .navbar a.active:hover{
 	padding-left: 20px;
@@ -120,16 +129,16 @@ header{
     box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
     color: blue; 
   }
-
+/*szek1*/
 .section1{
-	height: 1000px;
+	height: 920px;
 	background-image: url("wall2.jpg");
-	background-repeat: no-repeat;
-
+	background-attachment: fixed;
 	background-position: center;
 	display: inline-block;
 	width: 100%;
 }
+
 
 .section1 h1{
 	text-align: center;
@@ -147,7 +156,7 @@ header{
 	font-weight: bolder;	
 }
 
-
+/*szek2*/
 .section2{
 	background-color: white;
 	display: flex;
@@ -158,7 +167,7 @@ header{
 
 
 
-.section2 .szo2{
+.szo2{
 	color: #b38b6d;
 }
 
@@ -167,6 +176,11 @@ header{
 	float: left;
 	padding: 50px;
 	font-size: 20px;
+	border-right: 1px solid grey;
+}
+
+.section2 .szöveg h1{
+padding-left: 20px ;
 }
 .section2 .kep{
 	vertical-align: top;
@@ -188,22 +202,451 @@ header{
 	box-shadow: 20px 30px 40px  grey;
 }
 
-
-.section3{
-	height: 700px;
-	background-color: #b38b6d;
-	display: inline-block;
-	width: 100%;
+.section2 .szöveg p{
+	border-style: solid ;
+	border-color: white;
+	padding: 20px;
 }
+
+.section2 .szöveg p:hover{
+	box-shadow: 1px 1px 20px 1px;
+	transition: 0.2s ease;
+}
+
+/*szek3*/
+.section3{
+	
+	background-color: white;
+	display: flex;
+	width: 100%;
+	padding-top: 140px;
+	padding-left: 50px;
+	padding-right: 50px;
+	align-items: center;
+
+}
+
+.section3 .slider{
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.section3 .s3t1{
+	float: right;
+	padding: 20px;
+	border-style: solid ;
+	border-color: white;
+}
+.section3 .s3t1:hover{
+	
+	box-shadow: 1px 1px 20px 1px;
+	transition: 0.2s ease;
+}
+
+.section3 .slider h1{
+	text-align: center;
+	font-size: 35px;
+	
+}
+
+.section3 .s3t1 p{
+	text-align: center;
+	font-size: 20px;
+}
+
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: 0px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: 0px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-box-shadow: 0px 65px 50px 0px #A8A8A8;
+  width: 100%;
+}
+.section3 .wrapper .carousel .kep:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section3 .wrapper .carousel .kep2:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section3 .wrapper .carousel .kep3:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section3 .wrapper .carousel .kep4:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section3 .wrapper .carousel .kep5:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section3 .wrapper .carousel .kep6:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 1);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+
+/*szek4*/
 
 .section4{
-	height: 700px;
+	
 	background-color: white;
-	display: inline-block;
+	display: flex;
 	width: 100%;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	align-items: center;
+
+}
+
+.section4 .slider{
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.section4 .s3t1{
+	float: right;
+	padding: 20px;
+	width: 50%;
+border-style: solid ;
+	border-color: white;
+}
+
+.section4 .s3t1:hover{
+box-shadow: 1px 1px 20px 1px;
+	transition: 0.2s ease;
+	}
+
+.section4 .slider h1{
+	text-align: center;
+	font-size: 35px;d
+	
+}
+
+.section4 .s3t1 p{
+	text-align: center;
+	font-size: 20px;
+
+}
+
+.section4 .wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.section4 .wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.section4 .wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.section4 .wrapper i:hover{
+  background: #f2f2f2;
+}
+.section4 .wrapper i:first-child{
+  left: 0px;
+  display: none;
+}
+.section4 .wrapper i:last-child{
+  right: 0px;
+}
+.section4 .wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-box-shadow: 0px 65px 50px 0px #A8A8A8;
+  width: 100%;
+}
+.section4 .wrapper .carousel .kep:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper .carousel .kep2:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section4 .wrapper .carousel .kep3:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section4 .wrapper .carousel .kep4:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section4 .wrapper .carousel .kep5:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section4 .wrapper .carousel .kep6:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
 }
 
 
+.section4 .carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.section4 .carousel.dragging img{
+  pointer-events: none;
+}
+.section4 .carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 1);
+}
+.section4 .carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 1);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+/*szek5*/
+.section5{
+	flex-direction: row-reverse;
+	background-color: white;
+	display: flex;
+	width: 100%;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	align-items: center;
+
+}
+
+.section5 .slider{
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.section5 .s3t1{
+	float: right;
+	padding: 20px;
+	width: 50%;
+border-style: solid ;
+	border-color: white;
+}
+
+.section5 .s3t1:hover{
+box-shadow: 1px 1px 20px 1px;
+	transition: 0.2s ease;
+	}
+
+.section5 .slider h1{
+	text-align: center;
+	font-size: 35px;d
+	
+}
+
+.section5 .s3t1 p{
+	text-align: center;
+	font-size: 20px;
+
+}
+
+.section5 .wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.section5 .wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.section5 .wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.section5 .wrapper i:hover{
+  background: #f2f2f2;
+}
+.section5 .wrapper i:first-child{
+  left: 0px;
+  display: none;
+}
+.section5 .wrapper i:last-child{
+  right: 0px;
+}
+.section5 .wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-box-shadow: 0px 65px 50px 0px #A8A8A8;
+  width: 100%;
+}
+.section5 .wrapper .carousel .kep:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section5 .wrapper .carousel .kep2:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section5 .wrapper .carousel .kep3:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section5 .wrapper .carousel .kep4:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section5 .wrapper .carousel .kep5:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+.section5 .wrapper .carousel .kep6:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+
+.section5 .carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.section5 .carousel.dragging img{
+  pointer-events: none;
+}
+.section5 .carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 1);
+}
+.section5 .carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 1);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+
+
+/*szek6*/
+
+.section6{
+	height: 920px;
+	width: 100%;
+	background-color: white;
+}
+
+ /*média*/
 
 @media screen and (max-width: 1280px){
 	.section1 h1{
@@ -233,50 +676,30 @@ header{
 }
 
 @media (max-width: 1090px){
-	p{
+	.section2 p{
 		font-size: 18px;
 	}
+	.section3 .s3t1 p{
+		font-size: 18px;
+	}
+	.section3 .carousel {
+		width: 100%;
+	}
+
+	.section4 .s3t1 p{
+		font-size: 18px;
+	}
+	.section4 .carousel {
+		width: 100%;
+	}
+
+	.section5 .s3t1 p{
+		font-size: 18px;
+	}
+	.section5 .carousel {
+		width: 100%;
+	}
 }
-
-@media(max-width:440px){
-	.section1 h1{
-		text-align: left;
-	}
-
-	/*.section2{
-		display: flex;
-		flex-direction: column;
-		padding-bottom:20px ;
-	}*/
-
-	.section2 .szöveg h1{
-		text-align: center;
-	}
-
-	.section2{
-		display: flex;
-		flex-direction: column-reverse;
-		padding-top:65px;
-	}
-
-		.section2 .szöveg h1{
-		opacity: 0;
-	}
-
-	.section2 .en{
-		box-shadow: 10px 5px 30px  grey;
-		width: 50%;
-		height: auto;
-	}
-
-	.section2 #nev{
-	display: block;
-	position: relative;
-	top: 40%;
-}
-
-}
-
 @media (max-width: 860px){
 	header{
 		background-color:#413839 ;
@@ -309,7 +732,7 @@ header{
 	.navbar a:hover{
 		color: white;
 		background-color: #413839;
-		transform: translateY(5px);
+		transform: translatex(5px);
 		width: 0%;
 		height: 0%;
 		padding: 0%;
@@ -338,9 +761,103 @@ header{
 	.section2 .kep .en{
 		width: 70%;
 		height: auto;
-		top: 5%;
+		top: 25%;
 	}
 	.section2 .kep #nev{
-		top: 10%;
+		top: 30%;
 	}
+
+	.section2 .szöveg{
+	float: left;
+	padding: 50px;
+	font-size: 20px;
+	border-right: 0px solid grey;
+	
 }
+
+	.section3 .slider h1{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.section3{
+		flex-direction: column;
+	}
+
+	.section4 .slider h1{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.section4{
+		flex-direction: column-reverse;
+	}
+
+	.section5 .slider h1{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.section5{
+		flex-direction: column;
+	}
+
+}
+
+
+
+
+
+@media(max-width:440px){
+	.section1 h1{
+		text-align: center;
+	}
+
+
+	/*.section2{
+		display: flex;
+		flex-direction: column;
+		padding-bottom:20px ;
+	}*/
+
+	.section2 .szöveg h1{
+		text-align: center;
+	}
+
+	.section2{
+		display: flex;
+		flex-direction: column-reverse;
+		padding-top:65px;
+	}
+	.section2 .szöveg p{
+		text-align: center;
+	}
+
+		.section2 .szöveg h1{
+		opacity: 0;
+	}
+
+	.section2 .en{
+		box-shadow: 10px 5px 30px  grey;
+		width: 50%;
+		height: auto;
+	}
+
+	.section2 #nev{
+	display: block;
+	position: relative;
+	top: 50%;
+}
+	.section3 .slider{
+	padding: 0px;
+	width: 100%;
+}
+
+	.section4 .slider{
+	padding: 0px;
+	width: 100%;
+}
+
+}
+
+
