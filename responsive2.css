@@ -1,7 +1,7 @@
 html{
 	scroll-behavior: smooth;
 }
-
+/*eleje*/
 *{
 	margin:0;
 	box-sizing: border-box;
@@ -126,10 +126,9 @@ header{
 
 .inverted {
     background-color: #413839;
-    box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
-    color: blue; 
+ 
   }
-/*szek1*/
+/*szek1*/ /*háttér*/
 .section1{
 	height: 920px;
 	background-image: url("wall2.jpg");
@@ -138,6 +137,9 @@ header{
 	display: inline-block;
 	width: 100%;
 }
+
+
+
 
 
 .section1 h1{
@@ -206,11 +208,13 @@ padding-left: 20px ;
 	border-style: solid ;
 	border-color: white;
 	padding: 20px;
+	transition: 0.2s ease;
 }
 
 .section2 .szöveg p:hover{
 	box-shadow: 1px 1px 20px 1px;
 	transition: 0.2s ease;
+	border-radius: 5px;
 }
 
 /*szek3*/
@@ -219,17 +223,18 @@ padding-left: 20px ;
 	background-color: white;
 	display: flex;
 	width: 100%;
-	padding-top: 140px;
+	padding-top: 100px;
 	padding-left: 50px;
 	padding-right: 50px;
 	align-items: center;
+
 
 }
 
 .section3 .slider{
 	float: left;
 	width: 50%;
-	padding: 20px;
+	padding: 0px 20px 80px;
 }
 
 .section3 .s3t1{
@@ -237,9 +242,10 @@ padding-left: 20px ;
 	padding: 20px;
 	border-style: solid ;
 	border-color: white;
+	transition: 0.2s ease;
 }
 .section3 .s3t1:hover{
-	
+	border-radius: 5px;
 	box-shadow: 1px 1px 20px 1px;
 	transition: 0.2s ease;
 }
@@ -253,6 +259,7 @@ padding-left: 20px ;
 .section3 .s3t1 p{
 	text-align: center;
 	font-size: 20px;
+
 }
 
 .wrapper{
@@ -296,9 +303,20 @@ padding-left: 20px ;
   scroll-behavior: smooth;
   -webkit-box-shadow: 0px 65px 50px 0px #A8A8A8;
   width: 100%;
+  border-radius: 5px;
 }
+.section3 .wrapper .carousel .kep{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
 .section3 .wrapper .carousel .kep:hover{
 	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section3 .wrapper .carousel .kep2{
+	opacity: 1;
 	transition: all 0.5s ease;
 }
 
@@ -306,16 +324,36 @@ padding-left: 20px ;
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
+
+.section3 .wrapper .carousel .kep3{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
 .section3 .wrapper .carousel .kep3:hover{
 	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section3 .wrapper .carousel .kep4{
+	opacity: 1;
 	transition: all 0.5s ease;
 }
 .section3 .wrapper .carousel .kep4:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
+
+.section3 .wrapper .carousel .kep5{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
 .section3 .wrapper .carousel .kep5:hover{
 	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section3 .wrapper .carousel .kep6{
+	opacity: 1;
 	transition: all 0.5s ease;
 }
 .section3 .wrapper .carousel .kep6:hover{
@@ -360,17 +398,17 @@ padding-left: 20px ;
 	background-color: white;
 	display: flex;
 	width: 100%;
-	padding-top: 100px;
+	padding-top: 70px;
 	padding-left: 50px;
 	padding-right: 50px;
 	align-items: center;
 
 }
 
-.section4 .slider{
+.section4 .slider2{
 	float: left;
 	width: 50%;
-	padding: 20px;
+	padding: 0px 20px 100px;
 }
 
 .section4 .s3t1{
@@ -379,14 +417,16 @@ padding-left: 20px ;
 	width: 50%;
 border-style: solid ;
 	border-color: white;
+	transition: 0.2s ease;
 }
 
 .section4 .s3t1:hover{
 box-shadow: 1px 1px 20px 1px;
 	transition: 0.2s ease;
+	border-radius: 5px;
 	}
 
-.section4 .slider h1{
+.section4 .slider2 h1{
 	text-align: center;
 	font-size: 35px;d
 	
@@ -398,12 +438,12 @@ box-shadow: 1px 1px 20px 1px;
 
 }
 
-.section4 .wrapper{
+.section4 .wrapper2{
   display: flex;
   max-width: 1200px;
   position: relative;
 }
-.section4 .wrapper i{
+.section4 .wrapper2 i{
   top: 50%;
   height: 44px;
   width: 44px;
@@ -418,20 +458,20 @@ box-shadow: 1px 1px 20px 1px;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.section4 .wrapper i:active{
+.section4 .wrapper2 i:active{
   transform: translateY(-50%) scale(0.9);
 }
-.section4 .wrapper i:hover{
+.section4 .wrapper2 i:hover{
   background: #f2f2f2;
 }
-.section4 .wrapper i:first-child{
+.section4 .wrapper2 i:first-child{
   left: 0px;
   display: none;
 }
-.section4 .wrapper i:last-child{
+.section4 .wrapper2 i:last-child{
   right: 0px;
 }
-.section4 .wrapper .carousel{
+.section4 .wrapper2 .carousel2{
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
@@ -439,69 +479,108 @@ box-shadow: 1px 1px 20px 1px;
   scroll-behavior: smooth;
   -webkit-box-shadow: 0px 65px 50px 0px #A8A8A8;
   width: 100%;
+  border-radius: 5px;
 }
-.section4 .wrapper .carousel .kep:hover{
+
+
+.section4 .wrapper2 .carousel2 .kep:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
-.section4 .wrapper .carousel .kep2:hover{
-	opacity: 0.8;
-	transition: all 0.5s ease;
-}
-.section4 .wrapper .carousel .kep3:hover{
-	opacity: 0.8;
-	transition: all 0.5s ease;
-}
-.section4 .wrapper .carousel .kep4:hover{
-	opacity: 0.8;
-	transition: all 0.5s ease;
-}
-.section4 .wrapper .carousel .kep5:hover{
-	opacity: 0.8;
-	transition: all 0.5s ease;
-}
-.section4 .wrapper .carousel .kep6:hover{
-	opacity: 0.8;
+.section4 .wrapper2 .carousel2 .kep{
+	opacity: 1;
 	transition: all 0.5s ease;
 }
 
 
-.section4 .carousel.dragging{
+.section4 .wrapper2 .carousel2 .kep2:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep2{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep3:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep3{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep4:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep4{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep5:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep5{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep6:hover{
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.section4 .wrapper2 .carousel2 .kep6{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+
+
+.section4 .carousel2.dragging{
   cursor: grab;
   scroll-behavior: auto;
 }
-.section4 .carousel.dragging img{
+.section4 .carousel2.dragging img{
   pointer-events: none;
 }
-.section4 .carousel img{
+.section4 .carousel2 img{
   height: 340px;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 1);
 }
-.section4 .carousel img:first-child{
+.section4 .carousel2 img:first-child{
   margin-left: 0px;
 }
 @media screen and (max-width: 900px) {
-  .carousel img{
+  .carousel2 img{
     width: calc(100% / 1);
   }
 }
 @media screen and (max-width: 550px) {
-  .carousel img{
+  .carousel2 img{
     width: 100%;
   }
 }
 
 /*szek5*/
 .section5{
-	flex-direction: row-reverse;
+	flex-direction: row;
 	background-color: white;
 	display: flex;
 	width: 100%;
-	padding-top: 100px;
+	padding-top: 70px;
 	padding-left: 50px;
 	padding-right: 50px;
 	align-items: center;
@@ -511,7 +590,9 @@ box-shadow: 1px 1px 20px 1px;
 .section5 .slider{
 	float: left;
 	width: 50%;
-	padding: 20px;
+	padding: 0px 20px 100px;
+	display: flex;
+	flex-direction: column;
 }
 
 .section5 .s3t1{
@@ -520,11 +601,13 @@ box-shadow: 1px 1px 20px 1px;
 	width: 50%;
 border-style: solid ;
 	border-color: white;
+	transition: 0.2s ease;
 }
 
 .section5 .s3t1:hover{
 box-shadow: 1px 1px 20px 1px;
 	transition: 0.2s ease;
+	border-radius: 5px;
 	}
 
 .section5 .slider h1{
@@ -580,33 +663,68 @@ box-shadow: 1px 1px 20px 1px;
   scroll-behavior: smooth;
   -webkit-box-shadow: 0px 65px 50px 0px #A8A8A8;
   width: 100%;
+  border-radius: 5px;
 }
 .section5 .wrapper .carousel .kep:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
+.section5 .wrapper .carousel .kep{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+
 .section5 .wrapper .carousel .kep2:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
+
+.section5 .wrapper .carousel .kep2{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
 .section5 .wrapper .carousel .kep3:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
+
+.section5 .wrapper .carousel .kep3{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
 .section5 .wrapper .carousel .kep4:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
+
+.section5 .wrapper .carousel .kep4{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
 .section5 .wrapper .carousel .kep5:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
+
+.section5 .wrapper .carousel .kep5{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
 .section5 .wrapper .carousel .kep6:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
+.section5 .wrapper .carousel .kep6{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
 
 .section5 .carousel.dragging{
   cursor: grab;
@@ -637,13 +755,34 @@ box-shadow: 1px 1px 20px 1px;
 }
 
 
-
 /*szek6*/
 
 .section6{
 	height: 920px;
 	width: 100%;
 	background-color: white;
+}
+
+.section6 h1{
+	padding: 70px;
+}
+
+.section6 .suli{
+	width: 50%;
+	display: flex;
+	justify-content: start;
+}
+
+.section6 .suli2{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+
+}
+
+.section6 .egesz6{
+	display: flex;
+	padding-top: 70px	;
 }
 
  /*média*/
@@ -673,6 +812,12 @@ box-shadow: 1px 1px 20px 1px;
 	position: relative;
 	top: 25%;
 }
+
+	.section3 .slider{
+		width: 70%;
+		transition: 0.3s ease;
+	}
+
 }
 
 @media (max-width: 1090px){
@@ -686,12 +831,17 @@ box-shadow: 1px 1px 20px 1px;
 		width: 100%;
 	}
 
+	.section3 .slider{
+		width: 80%;
+	}
+
 	.section4 .s3t1 p{
 		font-size: 18px;
 	}
 	.section4 .carousel {
 		width: 100%;
 	}
+
 
 	.section5 .s3t1 p{
 		font-size: 18px;
@@ -778,19 +928,50 @@ box-shadow: 1px 1px 20px 1px;
 	.section3 .slider h1{
 		text-align: center;
 		font-size: 30px;
+
+	}
+	.section3 .s3t1{
+		width: 70%;
+	}
+
+	.section3 .slider {
+		text-align: center;
+		width: 70%;
+		padding: 10px;
 	}
 
 	.section3{
 		flex-direction: column;
+		padding-top: 70px;
 	}
 
-	.section4 .slider h1{
+	.section4 .slider2 h1{
 		text-align: center;
 		font-size: 30px;
 	}
 
+	.section4 .slider2{
+		text-align: center;
+		width: 70%;
+		padding: 10px;
+	}
+
+	.section3 .wrapper .carousel{
+		-webkit-box-shadow: 0px 0px 50px 0px #A8A8A8;
+	}
+
+	.section4 .s3t1{
+		width: 70%;
+	}
+
+	.section4 .wrapper2 .carousel2{
+		-webkit-box-shadow: 0px 0px 50px 0px #A8A8A8;
+	}
+
+
 	.section4{
 		flex-direction: column-reverse;
+		padding-top: 70px;
 	}
 
 	.section5 .slider h1{
@@ -800,6 +981,18 @@ box-shadow: 1px 1px 20px 1px;
 
 	.section5{
 		flex-direction: column;
+		padding-top: 70px;
+	}
+
+	.section5 .s3t1{
+		width: 70%;
+	}
+	.section5 .slider{
+		width: 70%;
+		padding: 10px;
+	}
+.section5  .wrapper .carousel{
+		-webkit-box-shadow: 0px 0px 50px 0px #A8A8A8;
 	}
 
 }
@@ -849,15 +1042,129 @@ box-shadow: 1px 1px 20px 1px;
 	top: 50%;
 }
 	.section3 .slider{
-	padding: 0px;
+	padding-top: 10px;
 	width: 100%;
 }
 
-	.section4 .slider{
-	padding: 0px;
+ .section3 .s3t1{
+ 	width: 100%;
+ 	transition: 0.2s ease;
+ }
+
+ .section4 .s3t1{
+ 	width: 100%;
+ 	transition: 0.2s ease;
+ }
+
+  .section5 .s3t1{
+ 	width: 100%;
+ 	transition: 0.2s ease;
+ }
+.section3 .slider .carousel{
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.section4 .slider2 .carousel2{
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.section4 .slider2{
+	padding-top: 10px;
 	width: 100%;
-}
 
 }
+.section5 .slider .carousel{
+	box-shadow: 0px 0px 0px 0px;
+}
+.section5 .slider{
+	box-shadow: 0px 0px 0px 0px;
+	padding-top: 10px;
+	width: 100%;
 
+}
 
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
