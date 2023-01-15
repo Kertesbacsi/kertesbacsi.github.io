@@ -1,5 +1,6 @@
 html{
 	scroll-behavior: smooth;
+	z-index: 0;
 }
 /*eleje*/
 *{
@@ -128,13 +129,142 @@ header{
     background-color: #413839;
  
   }
+
+/*modal1*/
+
+   #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+   }
+
+   #myImg:hover {
+      opacity: 0.7;
+   }
+
+   /* The Modal */
+
+   .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.9);
+      /* Black w/ opacity */
+      transition: all 0.5s ease;
+   }
+
+   /* Modal Content (image) */
+
+   .modal-content {
+      margin: auto;
+      display: block;
+      width: 90%;
+      max-width: 1000px;
+	   }
+
+
+  
+
+   /* Add Animation */
+
+   .modal-content,
+   #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+   }
+
+   @-webkit-keyframes zoom {
+      from {
+         -webkit-transform: scale(0);
+      }
+      to {
+         -webkit-transform: scale(1);
+      }
+   }
+
+   @keyframes zoom {
+      from {
+         transform: scale(0);
+      }
+      to {
+         transform: scale(1);
+      }
+   }
+
+   /* The Close Button */
+
+   .close {
+      position: absolute;
+      right: 80px;
+      color: #f1f1f1;
+      font-size: 60px;
+      font-weight: bold;
+      transition: 0.3s;
+   }
+
+   .close:hover,
+   .close:focus {
+      color: #b38b6d;
+      text-decoration: none;
+      cursor: pointer;
+   }
+
+   /* 100% Image Width on Smaller Screens */
+
+   @media only screen and (max-width: 700px) {
+      .modal-content {
+         width: 90%;
+      }
+   }
+   @media only screen and (max-width: 1280px) {
+      .modal-content {
+         width: 70%;
+      }
+      
+   }
+   @media only screen and (max-width: 900px) {
+      .modal-content {
+         width: 65%;
+      }
+      .modal .close{
+      	right: 35px;
+      }
+   }
+   @media only screen and (max-width: 400px) {
+      .modal-content {
+         width: 98%;
+      }
+      .modal .close{
+      	right: 5px;
+      	top: 80px;
+      }
+   }
+
+
+
 /*szek1*/ /*háttér*/
 .section1{
 	height: 920px;
 	background-image: url("wall2.jpg");
 	background-attachment: fixed;
 	background-position: center;
-	display: inline-block;
 	width: 100%;
 }
 
@@ -160,15 +290,33 @@ header{
 
 /*szek2*/
 .section2{
-	background-color: white;
-	display: flex;
+background: rgb(180,161,142);
+background: linear-gradient(180deg, rgba(180,161,142,0.3) 0%, rgba(255,255,255,1) 100%);
+display: flex;
 	width: 100%;
 	justify-content: space-around;
 	padding: 15px 15px 15px 15px;
 }
 
+.section3{
+background: rgb(180,161,142);
+background: linear-gradient(0deg, rgba(180,161,142,0.3) 0%, rgba(255,255,255,1) 100%);
+}
 
+.section4{
+background: rgb(180,161,142);
+background: linear-gradient(180deg, rgba(180,161,142,0.3) 0%, rgba(255,255,255,1) 100%);
+}
 
+.section5{
+background: rgb(180,161,142);
+background: linear-gradient(0deg, rgba(180,161,142,0.3) 0%, rgba(255,255,255,1) 100%);
+}
+
+.section6{
+background: rgb(180,161,142);
+background: linear-gradient(180deg, rgba(180,161,142,0.3) 0%, rgba(255,255,255,1) 100%);
+}
 .szo2{
 	color: #b38b6d;
 }
@@ -193,19 +341,19 @@ padding-left: 20px ;
 .section2 #nev{
 	display: block;
 	position: relative;
-	top: 20%;
+	top: 30%;
 }
 
 .section2 .en{
 	position: relative;
-	top: 15%;
+	top: 25%;
 	width: 45%;
 	border-radius: 50%;
 	box-shadow: 20px 30px 40px  grey;
 }
 
 .section2 .szöveg p{
-	border-style: solid ;
+	border-style: 0px solid ;
 	border-color: white;
 	padding: 20px;
 	transition: 0.2s ease;
@@ -234,15 +382,18 @@ padding-left: 20px ;
 .section3 .slider{
 	float: left;
 	width: 50%;
-	padding: 0px 20px 80px;
+	padding: 0px 20px 100px;
+	display: flex;
+	flex-direction: column;
 }
 
 .section3 .s3t1{
 	float: right;
 	padding: 20px;
-	border-style: solid ;
+	border-style: 0px solid ;
 	border-color: white;
 	transition: 0.2s ease;
+	width: 50%;
 }
 .section3 .s3t1:hover{
 	border-radius: 5px;
@@ -381,7 +532,7 @@ padding-left: 20px ;
 }
 @media screen and (max-width: 900px) {
   .carousel img{
-    width: calc(100% / 2);
+    width: calc(100% / 1);
   }
 }
 @media screen and (max-width: 550px) {
@@ -415,7 +566,7 @@ padding-left: 20px ;
 	float: right;
 	padding: 20px;
 	width: 50%;
-border-style: solid ;
+border-style: 0px solid ;
 	border-color: white;
 	transition: 0.2s ease;
 }
@@ -443,7 +594,7 @@ box-shadow: 1px 1px 20px 1px;
   max-width: 1200px;
   position: relative;
 }
-.section4 .wrapper2 i{
+.section4 .wrapper2 nav{
   top: 50%;
   height: 44px;
   width: 44px;
@@ -458,17 +609,17 @@ box-shadow: 1px 1px 20px 1px;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.section4 .wrapper2 i:active{
+.section4 .wrapper2 nav:active{
   transform: translateY(-50%) scale(0.9);
 }
-.section4 .wrapper2 i:hover{
+.section4 .wrapper2 nav:hover{
   background: #f2f2f2;
 }
-.section4 .wrapper2 i:first-child{
+.section4 .wrapper2 nav:first-child{
   left: 0px;
   display: none;
 }
-.section4 .wrapper2 i:last-child{
+.section4 .wrapper2 nav:last-child{
   right: 0px;
 }
 .section4 .wrapper2 .carousel2{
@@ -587,7 +738,7 @@ box-shadow: 1px 1px 20px 1px;
 
 }
 
-.section5 .slider{
+.section5 .slider3{
 	float: left;
 	width: 50%;
 	padding: 0px 20px 100px;
@@ -595,39 +746,39 @@ box-shadow: 1px 1px 20px 1px;
 	flex-direction: column;
 }
 
-.section5 .s3t1{
+.section5 .s3t13{
 	float: right;
 	padding: 20px;
 	width: 50%;
-border-style: solid ;
+border-style: 0px solid ;
 	border-color: white;
 	transition: 0.2s ease;
 }
 
-.section5 .s3t1:hover{
+.section5 .s3t13:hover{
 box-shadow: 1px 1px 20px 1px;
 	transition: 0.2s ease;
 	border-radius: 5px;
 	}
 
-.section5 .slider h1{
+.section5 .slider3 h1{
 	text-align: center;
 	font-size: 35px;d
 	
 }
 
-.section5 .s3t1 p{
+.section5 .s3t13 p{
 	text-align: center;
 	font-size: 20px;
 
 }
 
-.section5 .wrapper{
+.section5 .wrapper3{
   display: flex;
   max-width: 1200px;
   position: relative;
 }
-.section5 .wrapper i{
+.section5 .wrapper3 section{
   top: 50%;
   height: 44px;
   width: 44px;
@@ -642,20 +793,20 @@ box-shadow: 1px 1px 20px 1px;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.section5 .wrapper i:active{
+.section5 .wrapper3 section:active{
   transform: translateY(-50%) scale(0.9);
 }
-.section5 .wrapper i:hover{
+.section5 .wrapper3 section:hover{
   background: #f2f2f2;
 }
-.section5 .wrapper i:first-child{
+.section5 .wrapper3 section:first-child{
   left: 0px;
   display: none;
 }
-.section5 .wrapper i:last-child{
+.section5 .wrapper3 section:last-child{
   right: 0px;
 }
-.section5 .wrapper .carousel{
+.section5 .wrapper3 .carousel3{
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
@@ -665,91 +816,92 @@ box-shadow: 1px 1px 20px 1px;
   width: 100%;
   border-radius: 5px;
 }
-.section5 .wrapper .carousel .kep:hover{
+.section5 .wrapper3 .carousel3 .kep:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep{
+.section5 .wrapper3 .carousel3 .kep{
 	opacity: 1;
 	transition: all 0.5s ease;
 }
 
 
-.section5 .wrapper .carousel .kep2:hover{
+.section5 .wrapper3 .carousel3 .kep2:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep2{
+.section5 .wrapper3 .carousel3 .kep2{
 	opacity: 1;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep3:hover{
+.section5 .wrapper3 .carousel3 .kep3:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep3{
+.section5 .wrapper3 .carousel3 .kep3{
 	opacity: 1;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep4:hover{
+.section5 .wrapper3 .carousel3 .kep4:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep4{
+
+.section5 .wrapper3 .carousel3 .kep4{
 	opacity: 1;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep5:hover{
+.section5 .wrapper3 .carousel3 .kep5:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep5{
+.section5 .wrapper3 .carousel3 .kep5{
 	opacity: 1;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep6:hover{
+.section5 .wrapper3 .carousel3 .kep6:hover{
 	opacity: 0.8;
 	transition: all 0.5s ease;
 }
 
-.section5 .wrapper .carousel .kep6{
+.section5 .wrapper3 .carousel3 .kep6{
 	opacity: 1;
 	transition: all 0.5s ease;
 }
 
-.section5 .carousel.dragging{
+.section5 .carousel3.dragging{
   cursor: grab;
   scroll-behavior: auto;
 }
-.section5 .carousel.dragging img{
+.section5 .carousel3.dragging img{
   pointer-events: none;
 }
-.section5 .carousel img{
+.section5 .carousel3 img{
   height: 340px;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 1);
 }
-.section5 .carousel img:first-child{
+.section5 .carousel3 img:first-child{
   margin-left: 0px;
 }
 @media screen and (max-width: 900px) {
-  .carousel img{
+  .carousel3 img{
     width: calc(100% / 1);
   }
 }
 @media screen and (max-width: 550px) {
-  .carousel img{
+  .carousel3 img{
     width: 100%;
   }
 }
@@ -814,7 +966,6 @@ box-shadow: 1px 1px 20px 1px;
 }
 
 	.section3 .slider{
-		width: 70%;
 		transition: 0.3s ease;
 	}
 
@@ -832,7 +983,7 @@ box-shadow: 1px 1px 20px 1px;
 	}
 
 	.section3 .slider{
-		width: 80%;
+		transition: 0.3s ease;
 	}
 
 	.section4 .s3t1 p{
@@ -843,12 +994,15 @@ box-shadow: 1px 1px 20px 1px;
 	}
 
 
-	.section5 .s3t1 p{
+
+	.section5 .s3t13 p{
 		font-size: 18px;
 	}
-	.section5 .carousel {
+	.section5 .carousel3 {
 		width: 100%;
 	}
+
+
 }
 @media (max-width: 860px){
 	header{
@@ -936,8 +1090,9 @@ box-shadow: 1px 1px 20px 1px;
 
 	.section3 .slider {
 		text-align: center;
-		width: 70%;
+		transition: 0.3s ease;
 		padding: 10px;
+		width: 70%;
 	}
 
 	.section3{
@@ -974,7 +1129,7 @@ box-shadow: 1px 1px 20px 1px;
 		padding-top: 70px;
 	}
 
-	.section5 .slider h1{
+	.section5 .slider3 h1{
 		text-align: center;
 		font-size: 30px;
 	}
@@ -984,14 +1139,14 @@ box-shadow: 1px 1px 20px 1px;
 		padding-top: 70px;
 	}
 
-	.section5 .s3t1{
+	.section5 .s3t13{
 		width: 70%;
 	}
-	.section5 .slider{
+	.section5 .slider3{
 		width: 70%;
 		padding: 10px;
 	}
-.section5  .wrapper .carousel{
+.section5  .wrapper3 .carousel3{
 		-webkit-box-shadow: 0px 0px 50px 0px #A8A8A8;
 	}
 
@@ -1056,10 +1211,7 @@ box-shadow: 1px 1px 20px 1px;
  	transition: 0.2s ease;
  }
 
-  .section5 .s3t1{
- 	width: 100%;
- 	transition: 0.2s ease;
- }
+
 .section3 .slider .carousel{
 	box-shadow: 0px 0px 0px 0px;
 }
@@ -1073,98 +1225,17 @@ box-shadow: 1px 1px 20px 1px;
 	width: 100%;
 
 }
-.section5 .slider .carousel{
+  .section5 .s3t13{
+ 	width: 100%;
+ 	transition: 0.2s ease;
+ }
+.section5 .slider3 .carousel3{
 	box-shadow: 0px 0px 0px 0px;
 }
-.section5 .slider{
+.section5 .slider3{
 	box-shadow: 0px 0px 0px 0px;
 	padding-top: 10px;
 	width: 100%;
 
 }
 
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
