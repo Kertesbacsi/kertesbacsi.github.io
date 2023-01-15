@@ -65,6 +65,7 @@ header{
 	border-radius: 25px;
 	transition: 0.3s ease-in-out;
 }
+
 .navbar a:hover{
 	background-color:#b38b6d;
 	border-radius: 25px;
@@ -277,13 +278,15 @@ header{
    }
 
 
-
+/*háttér*/
 /*szek1*/ /*háttér*/
 .section1{
 	height: 920px;
 	background-image: url("wall2.jpg");
 	background-attachment: fixed;
 	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100%;
 }
 
