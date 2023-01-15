@@ -228,32 +228,51 @@ header{
 
    /* 100% Image Width on Smaller Screens */
 
-   @media only screen and (max-width: 700px) {
-      .modal-content {
-         width: 90%;
-      }
-   }
+   
    @media only screen and (max-width: 1280px) {
       .modal-content {
-         width: 70%;
-      }
-      
-   }
-   @media only screen and (max-width: 900px) {
-      .modal-content {
-         width: 65%;
+         width: 80%;
       }
       .modal .close{
       	right: 35px;
       }
    }
-   @media only screen and (max-width: 400px) {
+
+   @media only screen and (max-width: 1000px){
+   	.modal-content{
+   		width: 80%;
+   	}
+   }
+
+
+   @media only screen and (max-width: 900px) {
+      .modal-content {
+         width: 98%;
+      }
+      .modal .close{
+      	right: 35px;
+      }
+   }
+   .modal .close{
+      	right: 40px;
+      	top: 85px;
+      }
+
+   @media only screen and (max-width: 700px) {
+      .modal-content {
+         width: 90%;
+      }
+   }
+   @media only screen and (max-width: 500px) {
       .modal-content {
          width: 98%;
       }
       .modal .close{
       	right: 5px;
       	top: 80px;
+      }
+      .modal{
+      	padding-top: 100px;
       }
    }
 
