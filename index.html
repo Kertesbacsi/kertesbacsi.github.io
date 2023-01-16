@@ -1,260 +1,228 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Responsive</title>
-<link rel="stylesheet" type="text/css" href="responsive2.css">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Responsive</title>
+      <link rel="stylesheet" type="text/css" href="responsive2.css">
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+      </style>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      <!-- or -->
+      <link rel="stylesheet"
+         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   </head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <body>
+      <header>
+         <a href="#" class="logo"><i class="ri-chat-smile-2-fill"></i><span>BZ</span></a>
+         <ul class="navbar">
+            <li><a href="#about2">About</a></li>
+            <li><a href="#proj">Projects</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#edu">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+         <div class="main">
+            <a target="blanc" href="https://www.facebook.com/Ban.Zoli/" class="user"><i class="ri-facebook-circle-fill"></i></a>
+            <a target="blanc" href="https://www.instagram.com/szarlehetzolinaklenni/" class="user"><i class="ri-instagram-fill"></i></a>
+            <a href="#" class="user"><i class="ri-twitter-fill"></i></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+         </div>
+      </header>
+      <div class="section1">
+         <h1>
+            Hi! Welcome to my <a id="szo" href="#én"> portfolio</a>, let me introduce myself!
+         </h1>
+      </div>
+      <div id="about2" class="section2">
+         <div class="szöveg">
+            <h1>About me</h1>
+            <br>
+            <div class="pe">
+               <p>I'm a <a class="szo2">20-year-old Student</a>, I am living in Hungary with my parents.<br>
+                  I have two siblings and a dog.
+                  <br><br>
+                  I like animals, especially dogs, also have one, a labrador. Also, I like to be in nature, therefore I can connect the two and take a <a class="szo2">refreshing<br>
+                  walk in the park</a> with my dog whenever necessary.
+                  <br><br>
+                  I'm into sports, particularly team sports like football. I'm in this sport<br>
+                  for now ten years, so my <a class="szo2">competitive and team skills</a> are well-developed.<br>
+                  In my free time, I also liked to hit the gym and lift heavy weights.
+                  <br><br>
+                  I always had a huge <a class="szo2">interest in informatics</a>, mostly in photoshopping,<br>
+                  video cutting, and frontend web designing. I have been studying the latter intensively<br>
+                  for 2 years.
+               </p>
+            </div>
+         </div>
+         <div class="kep">
+            <img class="en" src="arc4.jpg">
+            <h1 id="nev">Bán <a class="szo2">Zoltán</a></h1>
+         </div>
+      </div>
+      <div id="proj" class="section3">
+         <div class="slider">
+            <h1>My <a class="szo2">Webdesign</a> projects</h1>
+            <br><br>
+            <div class="wrapper">
+               <div class="carousel">
+                  <img class="kep" src="bas.jpg" alt="img" draggable="false">
+                  <img class="kep2" src="blog.jpg" alt="img" draggable="false">
+                  <img class="kep3" src="tree.jpg" alt="img" draggable="false">
+                  <img class="kep4" src="rest.jpg" alt="img" draggable="false">
+                  <img class="kep5" src="shop.jpg" alt="img" draggable="false">
+                  <img class="kep6" src="hotel.jpg" alt="img" draggable="false">
+               </div>
+               <i id="left" class="fa-solid fa-angle-left"></i>
+               <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+         </div>
+         <div class="s3t1">
+            <p>Mainly the <a class="szo2">greatest</a> part of my informatic journey is front-end web development.
+               I'd like to use Figma or WordPress but I <a class="szo2">prefer</a> to code from scratch.
+               Here are some blogs, shopping, and hotel booker <a class="szo2">Webdesigns</a>, that
+               I made it in Html, CSS, and Javascript.
+            </p>
+         </div>
+      </div>
+      <div class="section4">
+         <div class="s3t1">
+            <p>My second favorite topic is <a class="szo2">Photo editing.</a><br>
+               It started for me as a <a class="szo2">free activity</a> that I used to do when I had free time. I like the modern and <a class="szo2">minimalist design</a>
+               but I'm also into<br> detailed photos too photos.
+            </p>
+         </div>
+         <div class="slider2">
+            <h1>My <a class="szo2">Photoshop</a> projects</h1>
+            <br><br>
+            <div class="wrapper2">
+               <div class="carousel2">
+                  <img id="myImg" class="kep" src="enyém.jfif" alt="img" draggable="false">
+                  <img class="kep2" src="blog.jpg" alt="img" draggable="false">
+                  <img class="kep3" src="tree.jpg" alt="img" draggable="false">
+                  <img class="kep4" src="rest.jpg" alt="img" draggable="false">
+                  <img class="kep5" src="shop.jpg" alt="img" draggable="false">
+                  <img class="kep6" src="hotel.jpg" alt="img" draggable="false">
+               </div>
+               <nav id="left" class="fa-solid fa-angle-left"></nav>
+               <nav id="right" class="fa-solid fa-angle-right"></nav>
+            </div>
+         </div>
+      </div>
+      <div id="myModal" class="modal">
+         <span class="close">×</span>
+         <img class="modal-content" id="img01" />
+      </div>
+      <div class="section5">
+         <div class="slider3">
+            <h1>My <a class="szo2">Video editing</a> projects</h1>
+            <br><br>
+            <div class="wrapper3">
+               <div class="carousel3">
+                  <img class="kep" src="hotel.jpg" alt="img" draggable="false">
+                  <img class="kep2" src="blog.jpg" alt="img" draggable="false">
+                  <img class="kep3" src="tree.jpg" alt="img" draggable="false">
+                  <img class="kep4" src="rest.jpg" alt="img" draggable="false">
+                  <img class="kep5" src="shop.jpg" alt="img" draggable="false">
+                  <img class="kep6" src="hotel.jpg" alt="img" draggable="false">
+               </div>
+               <section id="left" class="fa-solid fa-angle-left"></section>
+               <section id="right" class="fa-solid fa-angle-right"></section>
+            </div>
+         </div>
+         <div class="s3t13">
+            <p>
+               The process of <a class="szo2">video editing</a> is always exciting and <a class="szo2">challenging</a> for me, and it allows me to express my passion for visual storytelling in my work.<br> My love for the craft is evident in every project I undertake,<br> and I am continuously driven to <a class="szo2">improve</a> and hone my skills in the field.
+            </p>
+         </div>
+      </div>
+      <div id="edu" class="section6">
 
+      	<h1>Skills</h1>
+     <div class="egész6">
+<div class="slideshow-container">
 
+<div class="mySlides">
+	<h2>Education</h2>	
+					<ul>	
+   						
+   						<li>Bolyai János Primary SchoolSchoolSchoolSchool
+   						</li>
+   					<ul>
+   								<li>Standards</li>
+   					
 
-
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-	</style>
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <!-- or -->
-  <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-</head>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    
-
-<body>
-
-<header>
-
-		<a href="#" class="logo"><i class="ri-chat-smile-2-fill"></i><span>BZ</span></a>
-
-
-		<ul class="navbar">
-			<li><a href="#about2">About</a></li>
-			<li><a href="#proj">Projects</a></li>
-				<li><a href="#" class="active">Home</a></li>
-			<li><a href="#edu">Education</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-
-	
-		<div class="main">
-			<a target="blanc" href="https://www.facebook.com/Ban.Zoli/" class="user"><i class="ri-facebook-circle-fill"></i></a>
-			<a target="blanc" href="https://www.instagram.com/szarlehetzolinaklenni/" class="user"><i class="ri-instagram-fill"></i></a>
-			<a href="#" class="user"><i class="ri-twitter-fill"></i></i></a>
-			<div class="bx bx-menu" id="menu-icon"></div>
-		
+   					</ul><br><br>
+   
+   						<li>Bolyaiasdasdasdhnican School School School School School</li>
+   							<ul>
+   								<li>Informatics Basic IT</li>
+   							</ul><br><br>
+   
+   						<li>ASDASDASasdy School School School </li>
+   							<ul>
+   								<li>Bachelor Degree of Engineering</li>
+   							</ul><br><br>
+   
+   						<li>ASDASDASDAasdsity School School School</li>
+   							<ul>
+   								<li>Master degree of Engineering</li>
+   							</ul>
+   					</ul>
 </div>
-		
-	</header>
 
+<div class="mySlides">
+	<h2>Works</h2>
+  
+					<ul>	
+   						
+   						<li>Hungary, Mc'Donalds Fastfood Restaurant
+   						</li>
+   					<ul>			<li>Normal Employer</li>
+   								<li>Guide Guy</li>
+   					
 
- 	
-<div class="section1">
+   					</ul><br><br>
+   
+   						<li>Hungary, Tesco hipermarket</li>
+   							<ul>
+   								<li>Cashier</li>
+   							</ul><br><br>
+   
+   						<li>Austria, Agriculutre </li>
+   							<ul>
+   								<li>corn tasseling</li>
+   							</ul><br><br>
+   
+   						
+   							
+   					</ul>
 
-	<h1>
-	Hi! Welcome to my <a id="szo" href="#én"> portfolio</a>, let me introduce myself!
-</h1>
-
-
-</div>	
-
-
-<div id="about2" class="section2">
-
-
-
-
-
-<div class="szöveg">
-	<h1>About me</h1><br>
-	<div class="pe">
-
-	<p>I'm a <a class="szo2">20-year-old Student</a>, I am living in Hungary with my parents.<br>
-	I have two siblings and a dog.
-	<br><br>
-
-I like animals, especially dogs, also have one, a labrador. Also, I like to be in nature, therefore I can connect the two and take a <a class="szo2">refreshing<br>
-walk in the park</a> with my dog whenever necessary.
-
-	<br><br>
-	I'm into sports, particularly team sports like football. I'm in this sport<br>
-	for now ten years, so my <a class="szo2">competitive and team skills</a> are well-developed.<br>
-	In my free time, I also liked to hit the gym and lift heavy weights.
-
-	<br><br>
-
-	I always had a huge <a class="szo2">interest in informatics</a>, mostly in photoshopping,<br>
-	video cutting, and frontend web designing. I have been studying the latter intensively<br>
-	for 2 years.
-
-</p>
-</div>
 </div>
 
- <div class="kep">
-  	<img class="en" src="arc4.jpg">
-  	<h1 id="nev">Bán <a class="szo2">Zoltán</a></h1>
- </div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+</div>
 
 
+<div class="tudás">
+	<div class="tudás2">
+<h2>Experiences</h2>
+</div>
 
-</div>	
+</div>
 
-
-
-
-<div id="proj" class="section3">
-	
-		<div class="slider">
-<h1>My <a class="szo2">Webdesign</a> projects</h1><br><br>
-<div class="wrapper">
+     	
       
-      <div class="carousel">
-
-      	
-        <img class="kep" src="bas.jpg" alt="img" draggable="false">
-         <img class="kep2" src="blog.jpg" alt="img" draggable="false">
-        <img class="kep3" src="tree.jpg" alt="img" draggable="false">
-        <img class="kep4" src="rest.jpg" alt="img" draggable="false">
-        <img class="kep5" src="shop.jpg" alt="img" draggable="false">
-        <img class="kep6" src="hotel.jpg" alt="img" draggable="false">
-        
-      </div>
-      <i id="left" class="fa-solid fa-angle-left"></i>
-      <i id="right" class="fa-solid fa-angle-right"></i>
-    </div>
-
-
-	</div>
-
-
-
-	<div class="s3t1">
-			
-			<p>Mainly the <a class="szo2">greatest</a> part of my informatic journey is front-end web development.
-I'd like to use Figma or WordPress but I <a class="szo2">prefer</a> to code from scratch.
-Here are some blogs, shopping, and hotel booker <a class="szo2">Webdesigns</a>, that
-I made it in Html, CSS, and Javascript.</p>
-	</div>
-</div>	
-
-
-
-<div class="section4">
-<div class="s3t1">
-
-			
-	<p>My second favorite topic is <a class="szo2">Photo editing.</a><br>
-	It started for me as a <a class="szo2">free activity</a> that I used to do when I had free time. I like the modern and <a class="szo2">minimalist design</a>
-	but I'm also into<br> detailed photos too photos.</p>
-	</div>
-
-<div class="slider2">
-
-<h1>My <a class="szo2">Photoshop</a> projects</h1><br><br>
-<div class="wrapper2">
-
-
-
-
-      <div class="carousel2">
-
-      	<img id="myImg" class="kep" src="enyém.jfif" alt="img" draggable="false">
- 
-
-         <img class="kep2" src="blog.jpg" alt="img" draggable="false">
-        <img class="kep3" src="tree.jpg" alt="img" draggable="false">
-        <img class="kep4" src="rest.jpg" alt="img" draggable="false">
-        <img class="kep5" src="shop.jpg" alt="img" draggable="false">
-        <img class="kep6" src="hotel.jpg" alt="img" draggable="false">
-        
-      </div>
-
-      <nav id="left" class="fa-solid fa-angle-left"></nav>
-      <nav id="right" class="fa-solid fa-angle-right"></nav>
-    </div>
-
-</div> 
-	
-
-</div>	
-
-
-
-<div id="myModal" class="modal">
-      <span class="close">×</span>
-      <img class="modal-content" id="img01" />
-   </div>
-
-
-<div class="section5">
-
-
-<div class="slider3">
-<h1>My <a class="szo2">Video editing</a> projects</h1><br><br>
-<div class="wrapper3">
-      
-      <div class="carousel3">
-
-      	
-        <img class="kep" src="hotel.jpg" alt="img" draggable="false">
-         <img class="kep2" src="blog.jpg" alt="img" draggable="false">
-        <img class="kep3" src="tree.jpg" alt="img" draggable="false">
-        <img class="kep4" src="rest.jpg" alt="img" draggable="false">
-        <img class="kep5" src="shop.jpg" alt="img" draggable="false">
-        <img class="kep6" src="hotel.jpg" alt="img" draggable="false">
-        
-      </div>
-      <section id="left" class="fa-solid fa-angle-left"></section>
-      <section id="right" class="fa-solid fa-angle-right"></section>
-    </div>
-
-</div>
-	
-<div class="s3t13">
-			
-			<p>
-				 The process of <a class="szo2">video editing</a> is always exciting and <a class="szo2">challenging</a> for me, and it allows me to express my passion for visual storytelling in my work.<br> My love for the craft is evident in every project I undertake,<br> and I am continuously driven to <a class="szo2">improve</a> and hone my skills in the field.
-			</p>
-	</div>
-</div>	
-
-<div id="edu" class="section6">
-	<h1>Education</h1>
-
-		<div class="egesz6">
-			<div class="suli">
-		
-					<p>asd</p>
-			</div>
-
-			<div class="suli2">
-					<p>EDUCATION</p>
-			</div>
-
-		</div>
-</div>
-
-</div>
-
-
-
-<script type="text/javascript" src="responsive2.js">
-	
-	
-</script>
-<script type="text/javascript" src="java.js"></script>
-
-
-
-</div>
-</div>
-
-
-
-</body>
+      <script type="text/javascript" src="responsive2.js"></script>
+      <script type="text/javascript" src="java.js"></script>
+   </body>
 </html>
