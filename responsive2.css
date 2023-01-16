@@ -8,7 +8,7 @@ html{
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	list-style: none;
+
 }
 body{
 	min-height: 100vh;
@@ -41,6 +41,7 @@ header{
 .logo i{
 	color: #b38b6d;
 	font-size: 25px;
+
 	
 }
 .logo span{
@@ -52,6 +53,7 @@ header{
 .navbar{
 	display: flex;
 	align-items: center;
+	list-style: none;
 }
 
 .navbar a {
@@ -263,6 +265,7 @@ header{
       .modal-content {
          width: 90%;
       }
+ 	
    }
    @media only screen and (max-width: 500px) {
       .modal-content {
@@ -385,6 +388,8 @@ padding-left: 20px ;
 	transition: 0.2s ease;
 	border-radius: 5px;
 }
+
+
 
 /*szek3*/
 .section3{
@@ -842,6 +847,7 @@ box-shadow: 1px 1px 20px 1px;
 	transition: all 0.5s ease;
 }
 
+
 .section5 .wrapper3 .carousel3 .kep{
 	opacity: 1;
 	transition: all 0.5s ease;
@@ -934,29 +940,82 @@ box-shadow: 1px 1px 20px 1px;
 	height: 920px;
 	width: 100%;
 	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.egész6{
+	display: flex;
 }
 
 .section6 h1{
-	padding: 70px;
+	padding: 70px 0px 100px 70px;
+	font-size: 35px;
 }
 
-.section6 .suli{
+.section6 h2{
+	font-size: 25px;
+	text-align: center;
+}
+
+#red{
+	background-color: red;
+}
+.section6 .mySlides{
+	display: none;
+}
+
+.slideshow-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  border-right: 1px solid grey;
+  align-items: center;
+}
+
+.tudás #container{
+	width: 100%;
+  height: 100%;
+}
+
+
+/* Slides */
+.mySlides {
+  display: none;
+
+}
+
+.mySlides h2{
+  padding-bottom: 50px;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.section6 .tudás{
+	display: flex;
 	width: 50%;
-	display: flex;
-	justify-content: start;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
-.section6 .suli2{
-	width: 50%;
-	display: flex;
-	justify-content: center;
 
-}
-
-.section6 .egesz6{
-	display: flex;
-	padding-top: 70px	;
-}
 
  /*média*/
 
@@ -1175,7 +1234,31 @@ box-shadow: 1px 1px 20px 1px;
 
 
 
+@media(max-width:550px){
+		.section2 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 65px;
+   }
 
+.section2 .kep .en{
+		width: 50%;
+		height: auto;
+		top: 25%;
+	}
+
+.section2 .kep #nev{
+	display: block;
+	position: relative;
+	top: 30px;
+	}
+
+	.section2 .szöveg h1{
+		opacity: 0;
+	}
+ 
+
+}
 
 @media(max-width:440px){
 	.section1 h1{
@@ -1187,7 +1270,7 @@ box-shadow: 1px 1px 20px 1px;
 		background-repeat: no-repeat;
 		background-position: center;
 		
-		background-attachment: ;
+		background-attachment: fixed;
 	}
 
 
@@ -1267,4 +1350,5 @@ box-shadow: 1px 1px 20px 1px;
 	width: 100%;
 
 }
+
 
