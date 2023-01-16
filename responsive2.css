@@ -285,7 +285,7 @@ header{
 	background-image: url("wall2.jpg");
 	background-attachment: fixed;
 	background-position: center;
-	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100%;
 }
 
@@ -452,7 +452,7 @@ padding-left: 20px ;
   background: #fff;
   border-radius: 50%;
   transform: translateY(-50%);
-  transition: transform 0.1s linear;
+  transition: transform 0.2s linear;
 }
 .wrapper i:active{
   transform: translateY(-50%) scale(0.9);
@@ -1180,6 +1180,14 @@ box-shadow: 1px 1px 20px 1px;
 @media(max-width:440px){
 	.section1 h1{
 		text-align: center;
+	}
+
+	.section1{
+		background-image: url("wall2.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		
+		background-attachment: ;
 	}
 
 
