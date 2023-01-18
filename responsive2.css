@@ -1036,7 +1036,6 @@ box-shadow: 1px 1px 20px 1px;
 
 	width: 100%;
 	background-color: white;
-	height: 790px;
 	background: rgb(180,161,142);
 	background: linear-gradient(0deg, rgba(180,161,142,0.3) 0%, rgba(255,255,255,1) 100%);
 }
@@ -1066,7 +1065,8 @@ box-shadow: 1px 1px 20px 1px;
   width: 50%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start
 }
 
 .section7 #email{
@@ -1080,7 +1080,7 @@ box-shadow: 1px 1px 20px 1px;
   display: inline-block;
   outline: none;
   border: 1px solid #413839;
-  border-radius: 4px;
+  border-radius: 10px;
   box-sizing: border-box;
   font-size: 15px;
 }
@@ -1089,6 +1089,7 @@ box-shadow: 1px 1px 20px 1px;
 	outline: none;
 	resize: none;
 	  font-size: 15px;
+	  border-radius: 10px;
 }
 
 .section7 .nagy{
@@ -1124,16 +1125,37 @@ box-shadow: 1px 1px 20px 1px;
 .section7 .text p{
 	font-size: 20px;	
 	text-align: center;
-	padding: 10px;
+	padding: 95px;
 }
 
-footer{
-	text-align: center;
-	color: white;
-	background-color: #413839;
-	font-size: 20px;
-	height: 35px;
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
 }
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    padding-left: 1em;
+}
+
+footer nav {
+    margin: 0;
+    display: flex;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.5em;
+}
+
 
  /*média*/
 
@@ -1166,6 +1188,9 @@ footer{
 	.section3 .slider{
 		transition: 0.3s ease;
 	}
+	.section6 .slideshow-container .mySlides ul li{
+	font-size: 16px;
+}
 
 }
 
@@ -1200,6 +1225,26 @@ footer{
 		width: 100%;
 	}
 
+.section7 input[type=submit]{
+	width: 100%;
+	padding: 14px 0px;
+
+	transition: all 0.5s ease;
+}
+
+.section7 .text p{
+	padding: 30px;
+	font-size: 18px;
+}
+
+
+.section7 h1{
+	padding: 0px;
+}
+
+.section7 .egész7{
+	padding: 70px 0px 0px 0px;
+}
 
 }
 @media (max-width: 860px){
@@ -1348,11 +1393,46 @@ footer{
 		-webkit-box-shadow: 0px 0px 50px 0px #A8A8A8;
 	}
 
+
+	.section6 .slideshow-container{
+		font-size: 15px;
+	}
+ .section6 .egész6{
+	flex-direction: column-reverse;
+	align-items: center;
+}
+.section6 .tudás{
+	border-left: none;
+	align-items: center;
+
+}
+
+.section6 .tudás2 .diag{
+	width: 440px;
+	height: 250px;
+	padding:0;
+}
+.section6 .slideshow-container{
+	width: 100%;
+}
+.section6 .mySlides h2{
+	padding-top: 50px;
+}
+.section6 #works{
+	opacity: 0;
+}
+.section6 h1{
+	padding-bottom: 40px;
+}
+
+footer{
+	font-size: 16px;
+}
 }
 
 
 
-@media(max-width:550px){
+@media(max-width:600px){
 		.section2 {
     display: flex;
     flex-direction: column-reverse;
@@ -1374,11 +1454,31 @@ footer{
 	.section2 .szöveg h1{
 		opacity: 0;
 	}
- 
 
+.section7 .egész7{
+	flex-direction: column-reverse;
+	width: 100%;
 }
 
-@media(max-width:440px){
+.section7 .doboz{
+	width: 100%;
+}
+
+.section7 .text {
+	width: 100%;
+}
+
+.section7 .text p{
+	padding: 0px;
+	padding-bottom: 40px;
+}
+
+footer{
+	font-size: 14px;
+}
+}
+
+@media(max-width:480px){
 	.section1 h1{
 		text-align: center;
 	}
@@ -1469,4 +1569,28 @@ footer{
 
 }
 
+.projects{
+	padding: 0px;
+	opacity: 0;
+}
+
+.section6 .tudás2 .diag{
+	padding: 5px;
+	width: 370px;
+	height: 235px;
+}
+
+.section7 .egész7{
+	padding: 0px;
+}
+
+.section7 h1{
+	padding-bottom: 30px;
+}
+
+
+footer{
+	font-size: 12px;
+}
+}
 
