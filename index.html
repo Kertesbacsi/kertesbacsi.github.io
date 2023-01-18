@@ -24,7 +24,7 @@
             <li><a href="#proj">Projects</a></li>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#edu">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
          </ul>
          <div class="main">
             <a target="blanc" href="https://www.facebook.com/Ban.Zoli/" class="user"><i class="ri-facebook-circle-fill"></i></a>
@@ -40,7 +40,7 @@
       </div>
       <div id="about2" class="section2">
          <div class="szöveg">
-            <h1>About me</h1>
+            <h1>About <a class="szo2">me</a></h1>
             <br>
             <div class="pe">
                <p>I'm a <a class="szo2">20-year-old Student</a>, I am living in Hungary with my parents.<br>
@@ -64,7 +64,9 @@
             <h1 id="nev">Bán <a class="szo2">Zoltán</a></h1>
          </div>
       </div>
-      <div id="proj" class="section3">
+
+      <h1  id="proj" class="projects">My <a class="szo2">Projects</a></h1>
+      <div class="section3">
          <div class="slider">
             <h1>My <a class="szo2">Webdesign</a> projects</h1>
             <br><br>
@@ -102,8 +104,8 @@
             <div class="wrapper2">
                <div class="carousel2">
                   <img id="myImg" class="kep" src="enyém.jfif" alt="img" draggable="false">
-                  <img class="kep2" src="blog.jpg" alt="img" draggable="false">
-                  <img class="kep3" src="tree.jpg" alt="img" draggable="false">
+                  <img id="myImg2" class="kep2" src="szarvas1.jpg" alt="img" draggable="false">
+                  <img id="myImg3" class="kep3" src="késznagy2.jpg" alt="img" draggable="false">
                   <img class="kep4" src="rest.jpg" alt="img" draggable="false">
                   <img class="kep5" src="shop.jpg" alt="img" draggable="false">
                   <img class="kep6" src="hotel.jpg" alt="img" draggable="false">
@@ -142,7 +144,7 @@
       </div>
       <div id="edu" class="section6">
 
-      	<h1>Skills</h1>
+      	<h1>My <a class="szo2">Skills</a></h1>
      <div class="egész6">
 <div class="slideshow-container">
 
@@ -215,14 +217,89 @@
 
 <div class="tudás">
 	<div class="tudás2">
-<h2>Experiences</h2>
+<h2  id="works">Experiences</h2>
+
+<div class="diag">
+  <canvas id="myChart"></canvas>
+</div>
 </div>
 
 </div>
 
-     	
-      
+     	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script type="text/javascript" src="responsive2.js"></script>
       <script type="text/javascript" src="java.js"></script>
+
+    <script>
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: ['Html', 'Css', 'javascript', 'Vue.js', 'React.js'],
+              datasets: [{
+                  data: [45, 53, 30, 25, 20],
+                  backgroundColor: [
+                      '#b38b6d',
+                      'white',
+                      '#b38b6d',
+                      'white',
+                      '#b38b6d'
+                  ],
+              }]
+          },
+          options: {
+          	responsive: true,
+              scales: {
+                  y: {
+                      
+                      scaleLabel: {
+                            display: true,
+                            
+                      },
+                      ticks: {
+                            callback: function(value) {
+                                return customText(value);
+                            }
+                      }
+                  }
+              }
+          }
+      });
+      function customText(value) {
+        if (value == 10) return 'Beginner';
+        if (value == 30) return 'Elementary';
+        if (value == 50) return 'Intermediate';
+        if (value == 70) return 'Advanced';
+        if (value == 90) return 'Expert';
+      }
+    </script>
+</div>
+</div>
+    <div id="contact" class="section7">
+    	
+<h1>Contact <a class="szo2">me</a></h1>
+<div class="egész7">
+
+    	<div class="doboz">
+
+    <input type="text" id="fname" name="firstname" placeholder="Your e-mail..">
+
+
+    <textarea class="nagy" type="text" id="lname" name="lastname" placeholder="Text.."></textarea>
+
+
+  
+    <input type="submit" value="Submit">
+    		</div>
+    		<div class="text">
+
+    			<p>I am <a class="szo2">extremely grateful</a><br> for your visit to my portfolio webpage. Your interest and support means the<a class="szo2"> world to me</a>. I am always open to feedback, suggestions and I welcome any emails you may have. I <a class="szo2">appreciate you</a> taking the time to explore my portfolio and look forward to hearing from you.<br> <a class="szo2">Thank you</a> again for your visit!</p>
+    		</div>
+ 
+</div>
+</div>
+<footer>Szia</footer>
+
    </body>
 </html>
